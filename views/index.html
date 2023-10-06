@@ -10,8 +10,8 @@
      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="container" style="width: 500px; margin-left: 50px; margin-top: 50px;">
-        <form onSubmit="submitBlog(event)" class="form-control" style="background-color: lightseagreen;">
+    <div class="container"  style="display: inline-block; width: 30%; margin-left: 50px; margin-top: 50px; vertical-align: top;">
+        <form onSubmit="submitBlog(event)" class="form-control" style="background-color: blanchedalmond;">
             <div class="card-body" >
                 <h2>Create New Blog</h2>
                 <label for="title" class="form-label"><strong>Blog Title:</strong></label>
@@ -20,12 +20,15 @@
                 <input type="text" id="author" name="author" class="form-control" required>
                 <label for="content" class="form-label"><strong>Blog Content:</strong></label>
                 <textarea id="content" name="content" class="form-control" style="height: 100px; text-align: left;" required></textarea>
-                <button type="submit" value="submit" class="form-control" style="margin-top: 10px;margin-bottom: 10px;"><strong>Submit</strong></button>
+                <button type="submit" value="submit" class="form-control" style="margin-top: 10px;margin-bottom: 10px;background-color: lightblue;"><strong>Submit</strong></button>
             </div>
         </form>
     </div>
-    <ul id="blog-posts"></ul>
-
-</body>
+    <div class="container"  style="display: inline-block; width: 60%; margin-top: 50px; vertical-align: top;">
+        <ul id="blog-posts"></ul>
+        <ul id="commentList"></ul>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="main.js"></script>
+</body>
 </html>
